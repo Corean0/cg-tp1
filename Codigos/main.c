@@ -7,6 +7,9 @@
 #include <math.h>
 #include <time.h>
 #include "structs.h"
+#include <SDL/SDL.h>
+#include <SDL/SDL_mixer.h>
+#include "cabecalho.h"
 
 // Constantes globais
 #define largura 900.0
@@ -37,50 +40,6 @@ spriteOb_Animado_s 	ball, estrela, mario_voador;
 int 			    keyboard[256], pause, reset, sair, lugarJogadores, tipoJogo, tela = 0, fase, ultimo_pontuador;
 
 double 			    segundos_sleep, spd, timer_switch, ponto_0_wallpaper;
-
-// Cabeçalho
-void desenhaMinhaCena();
-void drawPlacar(spriteScore objeto);
-void drawObject(spriteObject objeto);
-void drawObjectA(spriteOb_Animado_s objeto);
-void addPoint(int pontuador);
-void addSet(int pontuador, int tipoJogo);
-void trocarJogadores();
-void resetAll();
-void resetBall();
-void resetBar();
-void resetPont();
-void resetSet();
-void moveBall();
-void moveBar();
-GLuint loadTexture(const char* arquivo);
-void teclaPressionada(unsigned char key, int x, int y);
-void teclaSegurada(unsigned char key, int x, int y);
-void mouseClick(int botao, int estado, int x, int y);
-void mouseMove(int x, int y);
-void redimensionada(int width, int height);
-void refresh(int delay);
-void setup();
-void trocarPosicoesPlacares();
-void main(int argc, char** argv);
-int vencedorMomento();
-void posAtualEstrela();
-void winner(int player);
-void Switch();
-void matchPoint(int player);
-void setPoint(int player);
-void rebatida(int player);
-void sleep_bola(double segundos);
-double bola_dormindo();
-void move_kamek();
-void move_mario();
-void tempo_switch(double segundos);
-double switch_rodando();
-void reseta_cores();
-void sleep(int segundos);
-void move_wallpaper_direita();
-void move_wallpaper_esquerda();
-void faseAtual();
 
 void main(int argc, char** argv)
 {
@@ -128,3 +87,4 @@ void main(int argc, char** argv)
 #include "resets.h"
 #include "sides.h"
 #include "events.h"
+#include "musicas.h"

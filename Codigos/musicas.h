@@ -1,15 +1,4 @@
-#include <time.h>
-#include <GL/glew.h>
-#include <GL/freeglut.h>
-#include <SOIL/SOIL.h>
-#include <stdio.h>
-
-#include <SDL/SDL.h>
-#include <SDL/SDL_mixer.h>
-
-#include "musica.h"
-
-void tocar_musica(char const nome[40], int loop) {
+void comecaMusica(char const nome[40], int loop) {
     Mix_Chunk * som = NULL;
     int canal;
     int canal_audio = 2;
@@ -35,6 +24,6 @@ void tocar_musica(char const nome[40], int loop) {
     }
 }
 
-void parar_musica() {
+void paraMusica() {
     Mix_HaltChannel(-1);
 }

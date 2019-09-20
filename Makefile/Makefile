@@ -1,7 +1,7 @@
 CC=gcc
-OPCOES_COMPILADOR= -lglut -lGL -lSOIL -lGLEW -lGLU -lSDL -lSDL_mixer -l
+OPCOES_COMPILADOR= -lglut -lGL -lSOIL -lGLEW -lGLU -lSDL -lSDL_mixer -lm
 TODOS_ARQUIVOS_PONTOH =  
-TODOS_ARQUIVOS_OBJ = main.o musica.o
+TODOS_ARQUIVOS_OBJ = main.o
 
 
 %.o: ../Codigos/%.c $(TODOS_ARQUIVOS_PONTOH)

@@ -3,12 +3,12 @@ void winner(int player)
 {
 	if(player == 1)
 	{
-		vencedor.textura = loadTexture("../imagens/Player1_win.png");
+		vencedor.textura = loadTexture("../Imagens/player1_win.png");
 	}
 
 	if(player == 2)
 	{
-		vencedor.textura = loadTexture("../imagens/Player2_win.png");
+		vencedor.textura = loadTexture("../Imagens/player2_win.png");
 	}
 }
 
@@ -17,12 +17,12 @@ void matchPoint(int player)
 {
 	if(player == 1)
 	{
-		match.textura = loadTexture("../imagens/match_point_blue.png");
+		match.textura = loadTexture("../Imagens/match_point_blue.png");
 	}
 
 	else
 	{
-		match.textura = loadTexture("../imagens/match_point_red.png");
+		match.textura = loadTexture("../Imagens/match_point_red.png");
 	}
 }
 
@@ -31,12 +31,12 @@ void setPoint(int player)
 {
 	if(player == 1)
 	{
-		setP.textura = loadTexture("../imagens/set_point_blue.png");
+		setP.textura = loadTexture("../Imagens/set_point_blue.png");
 	}
 
 	else
 	{
-		setP.textura = loadTexture("../imagens/set_point_red.png");
+		setP.textura = loadTexture("../Imagens/set_point_red.png");
 	}
 }
 
@@ -45,12 +45,12 @@ void rebatida(int player)
 {
 	if(player == 1)
 	{
-		ball.textura = loadTexture("../imagens/shell_animado_blue.png");
+		ball.textura = loadTexture("../Imagens/shell_animado_blue.png");
 	}
 
 	else
 	{
-		ball.textura = loadTexture("../imagens/shell_animado_red.png");
+		ball.textura = loadTexture("../Imagens/shell_animado_red.png");
 	}
 }
 
@@ -81,14 +81,14 @@ void tempo_switch(double segundos)
 {
 	if(lugarJogadores % 2 == 0)
 	{
-		kamek_voador.textura = loadTexture("../imagens/Kamek_invertido.png");
-		mario_voador.textura = loadTexture("../imagens/Mario.png");
+		kamek_voador.textura = loadTexture("../Imagens/kamek_invertido.png");
+		mario_voador.textura = loadTexture("../Imagens/mario.png");
 	}
 
 	else
 	{
-		kamek_voador.textura = loadTexture("../imagens/Kamek.png");
-		mario_voador.textura = loadTexture("../imagens/Mario_invertido.png");
+		kamek_voador.textura = loadTexture("../Imagens/kamek.png");
+		mario_voador.textura = loadTexture("../Imagens/mario_invertido.png");
 	}
 
 	sleep_bola(segundos);

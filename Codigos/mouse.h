@@ -18,66 +18,66 @@ void mouseMove(int x, int y)
     // Realizando o efeito hover na selacao dos sets
 	if(tela == 2)
 	{
-		set_1.textura = loadTexture("../imagens/1set.png");
+		set_1.textura = loadTexture("../Imagens/1set.png");
 
 		if(mouse.posicao.x < set_1.posicao.x + set_1.dimensoes.x/2 && mouse.posicao.x > set_1.posicao.x - set_1.dimensoes.x/2 &&
 		   mouse.posicao.y < set_1.posicao.y + set_1.dimensoes.y/2 && mouse.posicao.y > set_1.posicao.y - set_1.dimensoes.y/2)
 		{
-			set_1.textura = loadTexture("../imagens/1set_preto.png");
+			set_1.textura = loadTexture("../Imagens/1set_preto.png");
 		}
 
-		set_3.textura = loadTexture("../imagens/3set.png");
+		set_3.textura = loadTexture("../Imagens/3set.png");
 
 		if(mouse.posicao.x < set_3.posicao.x + set_3.dimensoes.x/2 && mouse.posicao.x > set_3.posicao.x - set_3.dimensoes.x/2 &&
 		   mouse.posicao.y < set_3.posicao.y + set_3.dimensoes.y/2 && mouse.posicao.y > set_3.posicao.y - set_3.dimensoes.y/2)
 		{
-			set_3.textura = loadTexture("../imagens/3set_preto.png");
+			set_3.textura = loadTexture("../Imagens/3set_preto.png");
 		}
 
-		set_5.textura = loadTexture("../imagens/5set.png");
+		set_5.textura = loadTexture("../Imagens/5set.png");
 
 		if(mouse.posicao.x < set_5.posicao.x + set_5.dimensoes.x/2 && mouse.posicao.x > set_5.posicao.x - set_5.dimensoes.x/2 &&
 		   mouse.posicao.y < set_5.posicao.y + set_5.dimensoes.y/2 && mouse.posicao.y > set_5.posicao.y - set_5.dimensoes.y/2)
 		{
-			set_5.textura = loadTexture("../imagens/5set_preto.png");
+			set_5.textura = loadTexture("../Imagens/5set_preto.png");
 		}
 
-		set_7.textura = loadTexture("../imagens/7set.png");
+		set_7.textura = loadTexture("../Imagens/7set.png");
 
 		if(mouse.posicao.x < set_7.posicao.x + set_7.dimensoes.x/2 && mouse.posicao.x > set_7.posicao.x - set_7.dimensoes.x/2 &&
 		   mouse.posicao.y < set_7.posicao.y + set_7.dimensoes.y/2 && mouse.posicao.y > set_7.posicao.y - set_7.dimensoes.y/2)
 		{
-			set_7.textura = loadTexture("../imagens/7set_preto.png");
+			set_7.textura = loadTexture("../Imagens/7set_preto.png");
 		}
 
-		set_9.textura = loadTexture("../imagens/9set.png");
+		set_9.textura = loadTexture("../Imagens/9set.png");
 
 		if(mouse.posicao.x < set_9.posicao.x + set_9.dimensoes.x/2 && mouse.posicao.x > set_9.posicao.x - set_9.dimensoes.x/2 &&
 		   mouse.posicao.y < set_9.posicao.y + set_9.dimensoes.y/2 && mouse.posicao.y > set_9.posicao.y - set_9.dimensoes.y/2)
 		{
-			set_9.textura = loadTexture("../imagens/9set_preto.png");
+			set_9.textura = loadTexture("../Imagens/9set_preto.png");
 		}
 
 		switch (tipoJogo)
 		{
 			case 1:
-				set_1.textura = loadTexture("../imagens/1set_preto.png");
+				set_1.textura = loadTexture("../Imagens/1set_preto.png");
 				break;
 
 			case 3:
-				set_3.textura = loadTexture("../imagens/3set_preto.png");
+				set_3.textura = loadTexture("../Imagens/3set_preto.png");
 				break;
 
 			case 5:
-				set_5.textura = loadTexture("../imagens/5set_preto.png");
+				set_5.textura = loadTexture("../Imagens/5set_preto.png");
 				break;
 
 			case 7:
-				set_7.textura = loadTexture("../imagens/7set_preto.png");
+				set_7.textura = loadTexture("../Imagens/7set_preto.png");
 				break;
 				
 			case 9:
-				set_9.textura = loadTexture("../imagens/9set_preto.png");
+				set_9.textura = loadTexture("../Imagens/9set_preto.png");
 				break;
 		}
 	}

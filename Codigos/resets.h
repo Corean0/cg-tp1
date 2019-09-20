@@ -40,7 +40,7 @@ void resetBall()
 
     ball.posicao.x = largura/2;
     ball.posicao.y = altura/2;
-    ball.textura = loadTexture("../imagens/shell_animado_purple.png");
+    ball.textura = loadTexture("../Imagens/shell_animado_purple.png");
 }
 
 // Reinicia as barras no meio

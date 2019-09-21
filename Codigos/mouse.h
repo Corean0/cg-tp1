@@ -212,10 +212,23 @@ void mouseClick(int botao, int estado, int x, int y)
 
 				else if(mouse.posicao.x < seta_esquerda.posicao.x + seta_esquerda.dimensoes.x/2 && mouse.posicao.x > seta_esquerda.posicao.x - seta_esquerda.dimensoes.x/2 &&
 				   	    mouse.posicao.y < seta_esquerda.posicao.y + seta_esquerda.dimensoes.y/2 && mouse.posicao.y > seta_esquerda.posicao.y - seta_esquerda.dimensoes.y/2)
-				{
-
+				{					
+					paraMusica(fase);
 					fase = ponto_0_wallpaper - 0.01;
-					comecaMusica(-1);
+					switch(fase){
+						case 1:
+							comecaMusica(som1, fase, -1);
+							break;
+						case 2:
+							comecaMusica(som2, fase, -1);
+							break;
+						case 3:
+							comecaMusica(som3, fase, -1);
+							break;
+						case 4:
+							comecaMusica(som4, fase, -1);
+							break;
+					}
 				}
 
 				if(fase == FASE_FINAL);
@@ -223,8 +236,22 @@ void mouseClick(int botao, int estado, int x, int y)
 				else if(mouse.posicao.x < seta_direita.posicao.x + seta_direita.dimensoes.x/2 && mouse.posicao.x > seta_direita.posicao.x - seta_direita.dimensoes.x/2 &&
 				   	    mouse.posicao.y < seta_direita.posicao.y + seta_direita.dimensoes.y/2 && mouse.posicao.y > seta_direita.posicao.y - seta_direita.dimensoes.y/2)
 				{
+					paraMusica(fase);
 					fase = ponto_0_wallpaper + 1;
-					comecaMusica(-1);
+					switch(fase){
+						case 1:
+							comecaMusica(som1, fase, -1);
+							break;
+						case 2:
+							comecaMusica(som2, fase, -1);
+							break;
+						case 3:
+							comecaMusica(som3, fase, -1);
+							break;
+						case 4:
+							comecaMusica(som4, fase, -1);
+							break;
+					}
 				}
 
 			}

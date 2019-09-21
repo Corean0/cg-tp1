@@ -41,5 +41,6 @@ void sleep(int segundos);
 void move_wallpaper_direita();
 void move_wallpaper_esquerda();
 void faseAtual();
-void comecaMusica(int loop);
+void comecaMusica(Mix_Chunk * som, int channel, int loop);
 void paraMusica();
+Mix_Chunk * carregaMusica(char const file[40]);

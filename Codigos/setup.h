@@ -29,7 +29,11 @@ void setup()
 	tipoJogo = 3;
     fase = 1;    
     faseAtual(); // Setando ponto_0_wallpaper inicial
-    comecaMusica(-1); // Começando musica inicial;
+	som1 = carregaMusica("../Sons/musica_1.ogg");
+	som2 = carregaMusica("../Sons/musica_2.ogg");
+	som3 = carregaMusica("../Sons/musica_3.ogg");
+	som4 = carregaMusica("../Sons/musica_4.ogg");
+    comecaMusica(som1,fase,-1); // Começando musica inicial;
 
     // Dimensões e Posições dos objetos iniciais
     set1.pontos = 0;

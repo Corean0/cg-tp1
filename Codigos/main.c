@@ -41,6 +41,8 @@ int 			    keyboard[256], pause, reset, sair, lugarJogadores, tipoJogo, tela = 0
 
 double 			    segundos_sleep, spd, timer_switch, ponto_0_wallpaper;
 
+Mix_Chunk		*som1, *som2, *som3, *som4;
+
 void main(int argc, char** argv)
 {
 

@@ -213,7 +213,9 @@ void mouseClick(int botao, int estado, int x, int y)
 				else if(mouse.posicao.x < seta_esquerda.posicao.x + seta_esquerda.dimensoes.x/2 && mouse.posicao.x > seta_esquerda.posicao.x - seta_esquerda.dimensoes.x/2 &&
 				   	    mouse.posicao.y < seta_esquerda.posicao.y + seta_esquerda.dimensoes.y/2 && mouse.posicao.y > seta_esquerda.posicao.y - seta_esquerda.dimensoes.y/2)
 				{
+
 					fase = ponto_0_wallpaper - 0.01;
+					comecaMusica(-1);
 				}
 
 				if(fase == FASE_FINAL);
@@ -222,6 +224,7 @@ void mouseClick(int botao, int estado, int x, int y)
 				   	    mouse.posicao.y < seta_direita.posicao.y + seta_direita.dimensoes.y/2 && mouse.posicao.y > seta_direita.posicao.y - seta_direita.dimensoes.y/2)
 				{
 					fase = ponto_0_wallpaper + 1;
+					comecaMusica(-1);
 				}
 
 			}

@@ -1,4 +1,4 @@
-void comecaMusica(char const nome[40], int loop)
+void comecaMusica(int loop) // -1 pra loop infinito
 {
     Mix_Chunk * som = NULL;
     int canal;
@@ -12,7 +12,20 @@ void comecaMusica(char const nome[40], int loop)
         printf("Não pode inicializar audio: %s\n", Mix_GetError());
     }
 
-    som = Mix_LoadWAV(nome);
+	switch(fase){
+		case 1:
+			som = Mix_LoadWAV("../Sons/musica_1.ogg");
+			break;
+		case 2:
+			som = Mix_LoadWAV("../Sons/musica_2.ogg");
+			break;
+		case 3:
+			som = Mix_LoadWAV("../Sons/musica_3.ogg");
+			break;
+		case 4:
+			som = Mix_LoadWAV("../Sons/musica_4.ogg");
+			break;
+	}
 
     if (som == NULL)
     {

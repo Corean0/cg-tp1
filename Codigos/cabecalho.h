@@ -41,5 +41,5 @@ void sleep(int segundos);
 void move_wallpaper_direita();
 void move_wallpaper_esquerda();
 void faseAtual();
-void comecaMusica(char const nome[40], int loop);
-void paraMusica(void);
+void comecaMusica(int loop);
+void paraMusica();

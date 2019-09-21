@@ -28,7 +28,8 @@ void setup()
 	timer_switch = 0;
 	tipoJogo = 3;
     fase = 1;    
-    void faseAtual(); // Setando ponto_0_wallpaper inicial
+    faseAtual(); // Setando ponto_0_wallpaper inicial
+    comecaMusica(-1); // Começando musica inicial;
 
     // Dimensões e Posições dos objetos iniciais
     set1.pontos = 0;

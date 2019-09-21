@@ -215,16 +215,21 @@ void mouseClick(int botao, int estado, int x, int y)
 				{					
 					paraMusica(fase);
 					fase = ponto_0_wallpaper - 0.01;
-					switch(fase){
+
+					switch(fase)
+					{
 						case 1:
 							comecaMusica(som1, fase, -1);
 							break;
+
 						case 2:
 							comecaMusica(som2, fase, -1);
 							break;
+
 						case 3:
 							comecaMusica(som3, fase, -1);
 							break;
+
 						case 4:
 							comecaMusica(som4, fase, -1);
 							break;
@@ -238,16 +243,21 @@ void mouseClick(int botao, int estado, int x, int y)
 				{
 					paraMusica(fase);
 					fase = ponto_0_wallpaper + 1;
-					switch(fase){
+
+					switch(fase)
+					{
 						case 1:
 							comecaMusica(som1, fase, -1);
 							break;
+
 						case 2:
 							comecaMusica(som2, fase, -1);
 							break;
+
 						case 3:
 							comecaMusica(som3, fase, -1);
 							break;
+
 						case 4:
 							comecaMusica(som4, fase, -1);
 							break;

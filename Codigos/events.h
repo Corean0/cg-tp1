@@ -91,7 +91,7 @@ void tempo_switch(double segundos)
 		mario_voador.textura = loadTexture("../Imagens/mario_invertido.png");
 	}
 
-	sleep_bola(segundos);
+	sleep_bola(segundos+1);
 	timer_switch = segundos*1000;
 }
 

@@ -22,7 +22,6 @@
 #define Player2 2
 #define FPS 17.0
 #define DELAY_PONT 2
-#define DELAY_SET 3
 #define TEMPO_TROCA 5
 #define FASE_FINAL 4
 

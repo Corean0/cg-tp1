@@ -87,8 +87,7 @@ void moveBall()
 				if(pontos1.pontos != 0)
 				{
 					sleep_bola(DELAY_PONT);
-				}else
-					sleep_bola(DELAY_SET);
+				}
 
 				resetBall();
 		    }
@@ -117,8 +116,7 @@ void moveBall()
 				if(pontos2.pontos != 0)
 				{
 					sleep_bola(DELAY_PONT);
-				}else
-					sleep_bola(DELAY_SET);
+				}
 				
 				resetBall();
 		    }
@@ -150,8 +148,7 @@ void moveBall()
 				if(pontos2.pontos != 0)
 				{
 					sleep_bola(DELAY_PONT);
-				}else
-					sleep_bola(DELAY_SET);
+				}
 
 				resetBall();
 		    }
@@ -180,8 +177,7 @@ void moveBall()
 				if(pontos1.pontos != 0)
 				{
 					sleep_bola(DELAY_PONT);
-				}else
-					sleep_bola(DELAY_SET);
+				}
 				
 				resetBall();
 		    }

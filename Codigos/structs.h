@@ -33,6 +33,7 @@ typedef struct Objeto_Animado
 	vetorR2 posicao;
 	vetorR2 dimensoes;
 	vetorR2 movimento;
+	float frequencia_atual;
 	float frequencia_animacao;
 	int textura;
 	double proporcaoSprite;

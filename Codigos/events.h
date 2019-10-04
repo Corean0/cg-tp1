@@ -74,7 +74,6 @@ void Switch()
 	drawObject(switch_player);
 	move_mario();
 	move_kamek();
-	mario_voador.frequencia_animacao += 0.25;
 }
 
 void tempo_switch(double segundos)

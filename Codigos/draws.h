@@ -48,7 +48,6 @@ void desenhaMinhaCena()
         // Desenhar o reizinho em quem estiver ganhando
     	if(vencedorMomento() != 0)
     	{
-    		estrela.frequencia_animacao+=0.5;
     		posAtualEstrela();
     		drawObjectA(estrela);
     	}
@@ -76,7 +75,6 @@ void desenhaMinhaCena()
     	
     	// Desenhando bola
     	drawObjectA(ball);
-    	ball.frequencia_animacao += 0.4;
 
     	// Desenhando eventos de vencedor
         if(set1.pontos == tipoJogo)
@@ -313,7 +311,8 @@ void drawObjectA(spriteOb_Animado_s objeto)
 {
 
     // Inicio da textura
-    int aux = (int)objeto.frequencia_animacao % (int)(1/objeto.proporcaoSprite);
+    objeto.frequencia_atual+=objeto.frequencia_animacao;
+    int aux = (int)objeto.frequencia_atual % (int)(1/objeto.proporcaoSprite);
     float ponto_0 = objeto.proporcaoSprite*aux;
 
     glEnable(GL_TEXTURE_2D);

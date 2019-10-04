@@ -104,7 +104,8 @@ void setup()
 	estrela.dimensoes.y = (1/10.0)*altura;
 	estrela.textura = loadTexture("../Imagens/star.png");
 	estrela.proporcaoSprite = 1/23.0;
-	estrela.frequencia_animacao = 0;
+    estrela.frequencia_atual = 0;
+	estrela.frequencia_animacao = 0.5;
 	estrela.movimento.x=0;
 	estrela.movimento.y=0;
 
@@ -143,7 +144,8 @@ void setup()
 	mario_voador.dimensoes.y = (1/4.0)*altura;
 	mario_voador.movimento.x = spd*1.2;
 	mario_voador.movimento.y = 0;
-	mario_voador.frequencia_animacao = 0;
+    mario_voador.frequencia_atual = 0;
+	mario_voador.frequencia_animacao = 0.25;
 	mario_voador.proporcaoSprite = 1/4.0;
 
 	switch_player.posicao.x = largura/2;
@@ -173,7 +175,8 @@ void setup()
     ball.dimensoes.y = altura/20;
     ball.movimento.x = spd;
     ball.movimento.y = spd;
-	ball.frequencia_animacao = 0;
+	ball.frequencia_atual = 0;
+    ball.frequencia_animacao = 0.4;
 	ball.proporcaoSprite = 1/8.0;
     ball.textura = loadTexture("../Imagens/shell_animado_purple.png");
 
